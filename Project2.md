@@ -25,7 +25,7 @@
 
 *To test how our Nginx server can respond to requests from the Internet*
 
-[Nginx Server response to request](http://100.26.212.185:80)
+[Nginx Server response to request](http://ec2-100-26-212-185.compute-1.amazonaws.com/)
 ![Apache-file](./Images/Apache-file8.PNG)
 
 *To retrieve your Public IP address on terminal*
@@ -34,5 +34,24 @@
 
 ![Apache-file](./Images/Apache-file9.PNG)
 
-
 ### INSTALLING MYSQL
+
+`sudo apt install mysql-server`
+![Apache-file](./Images/Apache-file10.PNG)
+![Apache-file](./Images/Apache-file11.PNG)
+
+*To log in to the MySQL console*
+
+`sudo mysql`
+![Apache-file](./Images/Apache-file12.PNG)
+
+*To set a password for the root user*
+
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';`
+![Apache-file](./Images/Apache-file13.PNG)
+
+*To exit the MySQL shell *
+
+`exit`
+![Apache-file](./Images/Apache-file14.PNG)
+
