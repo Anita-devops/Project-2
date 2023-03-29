@@ -50,8 +50,48 @@
 `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';`
 ![Apache-file](./Images/Apache-file13.PNG)
 
-*To exit the MySQL shell *
+*To exit the MySQL shell*
 
 `exit`
 ![Apache-file](./Images/Apache-file14.PNG)
+
+*To start the interactive script*
+
+`sudo mysql_secure_installation`
+
+![Apache-file](./Images/Apache-file15.PNG)
+![Apache-file](./Images/Apache-file16.PNG)
+![Apache-file](./Images/Apache-file17.PNG)
+
+*To test log in access in to the MySQL console and to exit the console*
+
+`sudo mysql -p`
+`exit`
+![Apache-file](./Images/Apache-file18.PNG)
+
+
+### INSTALLING PHP
+
+*To install PHP components- php-fpm, which stands for “PHP fastCGI process manager” which tell Nginx to pass PHP requests to this software for processing, and php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases*
+
+`sudo apt install php-fpm php-mysql`
+![Apache-file](./Images/Apache-file19.PNG)
+![Apache-file](./Images/Apache-file20.PNG)
+
+
+### CONFIGURING NGINX TO USE PHP PROCESSOR
+
+*To create the root web directory for my domain*
+
+`sudo mkdir /var/www/projectLEMP`
+
+*To assign ownership of the directory with the $USER environment variable, which will reference your current system user*
+
+`sudo chown -R $USER:$USER /var/www/projectLEMP`
+
+*To open a new configuration file in Nginx’s sites-available directory*
+
+`sudo nano /etc/nginx/sites-available/projectLEMP`
+
+
 
