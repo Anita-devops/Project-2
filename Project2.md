@@ -93,5 +93,18 @@
 
 `sudo nano /etc/nginx/sites-available/projectLEMP`
 
+*To activate your configuration*
+
+`sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`
+
+*To test the configuration for syntax errors*
+
+`sudo nginx -t`
+
+![Apache-file](./Images/Apache-file21.PNG)
+
+*To disable default Nginx host that is currently configured to listen on port 80*
+
+`sudo unlink /etc/nginx/sites-enabled/default`
 
 
