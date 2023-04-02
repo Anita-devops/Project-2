@@ -183,3 +183,18 @@ phpinfo();`
 `mysql> exit`
 
 ![Apache-file](./Images/Apache-file31.PNG)
+
+*To test if the new user has the proper permissions by logging in to the MySQL console using the custom user credentials*
+
+`mysql -u example_user -p`
+
+![Apache-file](./Images/Apache-file32.PNG)
+
+*To confirm that you have access to the example_database database*
+
+`mysql> SHOW DATABASES;`
+
+![Apache-file](./Images/Apache-file33.PNG)
+
+
+
