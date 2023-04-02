@@ -129,6 +129,30 @@
 
 ![Apache-file](./Images/Apache-file24.PNG)
 
+### TESTING PHP WITH NGINX
+
+*To open a new file called info.php within my document root*
+
+`sudo nano /var/www/projectLEMP/info.php`
+
+*To create a test PHP file in my document root, type or paste the following lines into the new file*
+
+`<?php
+phpinfo();`
+
+*To access the page in the web browser by visiting the domain name or public IP address you’ve set up in your Nginx configuration file, followed by /info.php:*
+
+[Accessing the webpage](http://100.26.212.185/info.php)
+
+![Apache-file](./Images/Apache-file25.PNG)
+
+*To use rm to remove the file*
+
+`sudo rm /var/www/your_domain/info.php`
+
+![Apache-file](./Images/Apache-file26.PNG)
+
+![Apache-file](./Images/Apache-file27.PNG)
 
 
-
+### RETRIEVING DATA FROM MYSQL DATABASE WITH PHP
