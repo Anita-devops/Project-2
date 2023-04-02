@@ -117,4 +117,18 @@
 
 ![Apache-file](./Images/Apache-file22.PNG)
 
+*To open your website URL using IP address*
+
+[To access website using IP address](http://100.26.212.185:80)
+
+![Apache-file](./Images/Apache-file23.PNG)
+
+*To open your website URL using DNS name*
+
+[To access website using DNS name](http://http://ec2-100-26-212-185.compute-1.amazonaws.com/:80)
+
+![Apache-file](./Images/Apache-file24.PNG)
+
+
+
 
