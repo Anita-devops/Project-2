@@ -107,4 +107,14 @@
 
 `sudo unlink /etc/nginx/sites-enabled/default`
 
+*To reload Nginx*
+
+`sudo systemctl reload nginx`
+
+*To create an index.html file in that location*
+
+`sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html`
+
+
+
 
