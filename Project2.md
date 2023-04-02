@@ -154,5 +154,32 @@ phpinfo();`
 
 ![Apache-file](./Images/Apache-file27.PNG)
 
-
 ### RETRIEVING DATA FROM MYSQL DATABASE WITH PHP
+
+*To connect to the MySQL console using the root account using already created password*
+
+`sudo mysql -p`
+
+*To create a new database*
+
+`mysql> CREATE DATABASE `example_database`;`
+
+![Apache-file](./Images/Apache-file28.PNG)
+
+*To create a new user and grant him full privileges on the database*
+
+`mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`
+
+![Apache-file](./Images/Apache-file29.PNG)
+
+*To  give this user permission over the example_database databasecreate a new user and grant him full privileges on the database*
+
+`mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';`
+
+![Apache-file](./Images/Apache-file30.PNG)
+
+*To exit the MySQL shell*
+
+`mysql> exit`
+
+![Apache-file](./Images/Apache-file31.PNG)
