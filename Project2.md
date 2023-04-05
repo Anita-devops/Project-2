@@ -196,5 +196,49 @@ phpinfo();`
 
 ![Apache-file](./Images/Apache-file33.PNG)
 
+*To create a test table named todo_list*
 
+`CREATE TABLE example_database.todo_list (
+mysql>     item_id INT AUTO_INCREMENT,
+mysql>     content VARCHAR(255),
+mysql>     PRIMARY KEY(item_id)
+mysql> );`
 
+![Apache-file](./Images/Apache-file34.PNG)
+
+*To Insert a few rows of content in the test table*
+
+`mysql> INSERT INTO example_database.todo_list (content) VALUES ("My first important item");`
+
+`mysql> INSERT INTO example_database.todo_list (content) VALUES ("My second important item");`
+
+`mysql> INSERT INTO example_database.todo_list (content) VALUES ("My third important item");`
+
+`mysql> INSERT INTO example_database.todo_list (content) VALUES ("and this one more thing");`
+
+![Apache-file](./Images/Apache-file35.PNG)
+![Apache-file](./Images/Apache-file36.PNG)
+
+*To confirm that the data was successfully saved to the table*
+
+`mysql>  SELECT * FROM example_database.todo_list;`
+
+![Apache-file](./Images/Apache-file37.PNG)
+
+*To exit the MySQL console*
+
+`mysql> exit`
+
+![Apache-file](./Images/Apache-file38.PNG)
+
+*To create a new PHP file in your custom web root directory using vi*
+
+`nano /var/www/projectLEMP/todo_list.php`
+
+![Apache-file](./Images/Apache-file39.PNG)
+
+*To access the page in my web browser by visiting the domain name or public IP address configured for my website, followed by /todo_list.php:*
+
+`http://100.26.212.185/todo_list.php`
+
+![Apache-file](./Images/Apache-file40.PNG)
